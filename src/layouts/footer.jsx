@@ -7,7 +7,9 @@ export default function Footer() {
             className="flex aspect-video w-full max-w-full flex-col items-center justify-center bg-footer bg-100% bg-center bg-no-repeat pr-[16px] md:h-[300px]"
             id="footer"
         >
-            <div className='flex gap-[50px]'>
+            <div className="flex gap-[50px]" 
+            data-aos="zoom-out-left"
+            >
                 <PiTelegramLogoDuotone className="h-[70px] w-[70px] cursor-pointer text-white" />
                 <BsTwitterX className="h-[70px] w-[70px] cursor-pointer text-white" />
             </div>

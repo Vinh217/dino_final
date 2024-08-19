@@ -6,12 +6,16 @@ import LazyLoad from 'react-lazyload';
 export default function About() {
     return (
         <Container>
-            <div className="flex h-full w-full flex-col justify-center text-center">
+            <div
+                className="flex h-full w-full flex-col justify-center text-center"
+                data-aos="fade-down-right"
+                id="about"
+            >
                 <TextHeader>Meet The Playful Dinosaurs</TextHeader>
                 <Paragraph>Powered by Solana</Paragraph>
             </div>
-            <div className="flex items-center justify-center gap-[20px] md:flex-row flex-col">
-                <div className="flex w-full min-w-[200px]">
+            <div className="flex flex-col items-center justify-center gap-[20px] md:flex-row">
+                <div className="flex w-full min-w-[200px]" data-aos="fade-up">
                     <LazyLoad height={200} once>
                         <img
                             src="/assets/egg.png"
@@ -20,7 +24,10 @@ export default function About() {
                         />
                     </LazyLoad>
                 </div>
-                <div className="flex flex-col items-center gap-[20px] text-center">
+                <div
+                    className="flex flex-col items-center gap-[20px] text-center"
+                    data-aos="fade-down-left"
+                >
                     <Paragraph classes={'font-[700]'}>
                         Millions years ago, colossal creatures once ruled the
                         Earth. But then, in a twist of fate, a catastrophic
@@ -35,7 +42,10 @@ export default function About() {
                         And somewhere in this new realm, something ancient is
                         beginning to stir
                     </Paragraph>
-                    <div className="flex w-[300px] cursor-pointer items-center justify-center rounded-[14px] border-2 border-[#000000] bg-white px-[20px] py-[10px] transition-all hover:scale-105">
+                    <div
+                        className="flex w-[300px] cursor-pointer items-center justify-center rounded-[14px] border-2 border-[#000000] bg-white px-[20px] py-[10px] transition-all hover:scale-105"
+                        data-aos="fade-up"
+                    >
                         <a className="cursor-pointer text-[22px] font-bold text-black">
                             Join Our Community
                         </a>

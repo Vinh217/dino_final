@@ -6,12 +6,12 @@ import LazyLoad from 'react-lazyload';
 export default function Roadmap() {
     return (
         <Container>
-            <div className="text-center">
+            <div className="text-center"  data-aos="flip-left" id="roadmap">
                 <TextHeader>DINO ROADMAP</TextHeader>
             </div>
             <div className="flex flex-col items-center justify-between gap-[20px] md:flex-row">
                 <div className="flex flex-col gap-[30px] md:flex-row">
-                    <div className="flex flex-col justify-start">
+                    <div className="flex flex-col justify-start" data-aos="fade-up">
                         <Paragraph classes={'font-[700] break-keep whitespace-nowrap'}>
                             1 The Triassic
                         </Paragraph>
@@ -34,7 +34,7 @@ export default function Roadmap() {
                         </div>
                     </div>
 
-                    <div className="flex flex-col justify-start md:mt-[100px]">
+                    <div className="flex flex-col justify-start md:mt-[100px]" data-aos="fade-up" data-aos-delay="300">
                         <Paragraph classes={'font-[700] break-keep whitespace-nowrap'}>
                             2 The Jurrasic
                         </Paragraph>
@@ -57,7 +57,7 @@ export default function Roadmap() {
                         </div>
                     </div>
                     
-                    <div className="flex flex-col justify-start md:mt-[200px]">
+                    <div className="flex flex-col justify-start md:mt-[200px]" data-aos="fade-up" data-aos-delay="500">
                         <Paragraph classes={'font-[700] break-keep whitespace-nowrap'}>
                             3 The Cretaceous
                         </Paragraph>
@@ -77,7 +77,7 @@ export default function Roadmap() {
                         </div>
                     </div>
                 </div>
-                <div className="flex w-full min-w-[200px]">
+                <div className="flex w-full min-w-[200px]" data-aos="fade-right">
                     <LazyLoad height={200} once>
                         <img
                             src="/assets/dino_surface.png"

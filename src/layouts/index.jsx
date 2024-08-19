@@ -15,7 +15,7 @@ export default function Layout({ children }) {
         {
             id: 1,
             title: 'Home',
-            link: '#home',
+            link: '',
         },
         {
             id: 2,
@@ -41,7 +41,7 @@ export default function Layout({ children }) {
                 <div className="ml-auto mr-auto w-full max-w-[1674px] px-[14px]">
                     <div className="headerrr px-[16px] py-[10px] md:py-[10px] border-t border-black border-x">
                         <div className="flex items-center md:gap-[50px]">
-                            <div className="flex w-full max-w-[50px] md:max-w-[70px]">
+                            <div className="flex w-full max-w-[50px] md:max-w-[70px] cursor-pointer" onClick={() => window.location.reload()}>
                                 <LazyLoad height={200} once>
                                     <img
                                         src="/assets/dino_logo.png"
