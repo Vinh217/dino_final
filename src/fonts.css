@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'wild';
+    src: url('/fonts/wild-life/WildLifeRegular-1G6G2.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'urban';
+    src: url('/fonts/urban-jungle/Urbanjungledemo-ymAm.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
