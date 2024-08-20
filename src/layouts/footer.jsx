@@ -3,7 +3,15 @@ import { PiTelegramLogoDuotone } from 'react-icons/pi';
 import { BsTwitterX } from 'react-icons/bs';
 export default function Footer() {
     return (
-        <div
+        <>
+            <div className="w-full bg-bg-primary">
+            <img
+                src="/assets/line.svg"
+                alt=""
+                className="h-full w-full"
+            />
+        </div>
+            <div
             className="flex aspect-video w-full max-w-full flex-col items-center justify-center bg-footer bg-100% bg-center bg-no-repeat pr-[16px] md:h-[300px]"
             id="footer"
         >
@@ -22,5 +30,7 @@ export default function Footer() {
                 Unleash the Dino-Mite! Stay Connected and Join the Adventure!
             </Paragraph>
         </div>
+        </>
+        
     );
 }

@@ -14,11 +14,11 @@ export default function Roadmap() {
                         className="flex flex-col justify-start"
                         data-aos="fade-up"
                     >
-                        <Paragraph
-                            classes={'font-[700] break-keep whitespace-nowrap'}
+                        <TextHeader
+                            classes={'!text-[3.6rem] break-keep whitespace-nowrap'}
                         >
                             1 The Triassic
-                        </Paragraph>
+                        </TextHeader>
                         <div>
                             <Paragraph classes={'md:text-[2rem]'}>
                                 Presale
@@ -43,11 +43,11 @@ export default function Roadmap() {
                         data-aos="fade-up"
                         data-aos-delay="300"
                     >
-                        <Paragraph
-                            classes={'font-[700] break-keep whitespace-nowrap'}
+                        <TextHeader
+                            classes={'!text-[3.6rem] break-keep whitespace-nowrap'}
                         >
                             2 The Jurrasic
-                        </Paragraph>
+                        </TextHeader>
                         <div>
                             <Paragraph classes={'md:text-[2rem]'}>
                                 CEX listing
@@ -72,11 +72,11 @@ export default function Roadmap() {
                         data-aos="fade-up"
                         data-aos-delay="500"
                     >
-                        <Paragraph
-                            classes={'font-[700] break-keep whitespace-nowrap'}
+                        <TextHeader
+                            classes={'!text-[3.6rem] break-keep whitespace-nowrap'}
                         >
                             3 The Cretaceous
-                        </Paragraph>
+                        </TextHeader>
                         <div>
                             <Paragraph classes={'md:text-[2rem]'}>
                                 Staking

@@ -1,5 +1,6 @@
 import About from '../../components/About';
 import Dinonomic from '../../components/Dinonomic';
+import LineSpace from '../../components/LineSpace';
 import Presale from '../../components/PreSale';
 import Roadmap from '../../components/Roadmap';
 import Paragraph from '../../components/common/Paragraph';
@@ -21,13 +22,9 @@ export default function Home() {
 
     return (
         <div>
-            <div
-                className="flex aspect-video w-full max-w-full bg-banner bg-100% bg-center bg-no-repeat pr-[16px] md:h-full"
-            >
+            <div className="flex aspect-video w-full max-w-full bg-banner bg-100% bg-center bg-no-repeat pr-[16px] md:h-full">
                 <div className="flex items-end">
-                    <div
-                        className="flex w-full min-w-[200px] max-w-[700px]"
-                    >
+                    <div className="flex w-full min-w-[200px] max-w-[700px]">
                         <img
                             src="/assets/dino_ip.png"
                             alt="gift"
@@ -47,9 +44,13 @@ export default function Home() {
                     </div>
                 </div>
             </div>
+            <LineSpace />
             <About />
+            <LineSpace />
             <Roadmap />
+            <LineSpace />
             <Presale />
+            <LineSpace />
             <Dinonomic />
         </div>
     );
