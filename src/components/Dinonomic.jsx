@@ -7,7 +7,7 @@ export default function Dinonomic() {
         <Container>
             <div
                 className="text-center"
-                data-aos="zoom-in-right"
+                data-aos="flip-right"
                 id="dinonomic"
             >
                 <TextHeader>DINONOMICS</TextHeader>
@@ -57,7 +57,7 @@ export default function Dinonomic() {
                 </div>
                 <div
                     className="flex w-full min-w-[200px]"
-                    data-aos="zoom-out-left"
+                    data-aos="flip-left"
                 >
                     <img
                         src="/assets/dino_rest.png"

@@ -7,7 +7,7 @@ export default function About() {
         <Container>
             <div
                 className="flex h-full w-full flex-col justify-center text-center"
-                data-aos="fade-down-right"
+                data-aos="flip-left"
                 id="about"
             >
                 <TextHeader>Meet The Playful Dinosaurs</TextHeader>
@@ -23,7 +23,7 @@ export default function About() {
                 </div>
                 <div
                     className="flex flex-col items-center gap-[20px] text-center"
-                    data-aos="fade-down-left"
+                    data-aos="flip-left"
                 >
                     <Paragraph classes={'font-[700]'}>
                         Millions years ago, colossal creatures once ruled the

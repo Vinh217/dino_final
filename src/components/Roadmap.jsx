@@ -95,7 +95,7 @@ export default function Roadmap() {
                 </div>
                 <div
                     className="flex w-full min-w-[200px]"
-                    data-aos="fade-right"
+                    data-aos="flip-right"
                 >
                     <img
                         src="/assets/dino_surface.png"

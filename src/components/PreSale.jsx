@@ -12,7 +12,7 @@ export default function PreSale() {
             <div className="flex h-full w-full flex-col justify-center pb-[300px] md:flex-row md:pb-[30px]">
                 <div
                     className="flex w-full min-w-[200px]"
-                    data-aos="zoom-in-up"
+                    data-aos="flip-right"
                 >
                     <img
                         src="/assets/dino_song.png"
@@ -22,7 +22,7 @@ export default function PreSale() {
                 </div>
                 <div
                     className="flex w-full flex-col items-center gap-[30px]"
-                    data-aos="zoom-in-down"
+                    data-aos="flip-left"
                 >
                     <TextHeader
                         classes={'font-potta-one text-center py-[30px]'}
@@ -42,7 +42,7 @@ export default function PreSale() {
                     </div>
                 </div>
             </div>
-            <div className="absolute bottom-0 right-0" data-aos="zoom-in-up">
+            <div className="absolute bottom-0 right-0" data-aos="fade-down-right">
                 <div className="flex w-full min-w-[200px]">
                     <img
                         src="/assets/twoegg.png"
