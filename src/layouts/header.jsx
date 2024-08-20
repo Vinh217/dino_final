@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import ButtonCustom from '../components/common/ButtonCustom';
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
@@ -51,7 +52,7 @@ export default function Header() {
                                 {menus.map((m) => (
                                     <a
                                         href={m.link}
-                                        className="cursor-pointer"
+                                        className="cursor-pointer font-wild text-[3.6rem]"
                                         key={m.id}
                                     >
                                         {m.title}
@@ -59,14 +60,7 @@ export default function Header() {
                                 ))}
                             </div>
                         </div>
-                        <div className="hidden cursor-pointer items-center justify-center rounded-[14px] border-2 border-[#000000] bg-bg-primary px-[20px] py-[5px] transition-all hover:scale-105 md:flex">
-                            <a
-                                className="cursor-pointer text-nowrap break-keep text-[24px] font-bold text-white"
-                                href="#presale"
-                            >
-                                PRE-SALE
-                            </a>
-                        </div>
+                        <ButtonCustom>PRE-SALE</ButtonCustom>
                     </div>
                 </div>
             </div>
@@ -91,7 +85,7 @@ export default function Header() {
                     <img
                         src="/assets/ham.svg"
                         alt=""
-                        className="cursor-pointer w-[40px]"
+                        className="w-[40px] cursor-pointer"
                     />
                 </div>
             </div>
@@ -117,11 +111,11 @@ export default function Header() {
                             />
                         </div>
                     </div>
-                    <div className="flex cursor-pointer flex-col gap-[20px] text-[30px] font-bold uppercase text-text-base md:hidden">
+                    <div className="flex cursor-pointer flex-col gap-[20px] text-[30px] font-bold uppercase text-black md:hidden">
                         {menus.map((m) => (
                             <a
                                 href={m.link}
-                                className="cursor-pointer"
+                                className="cursor-pointer font-wild text-[3.6rem]"
                                 key={m.id}
                                 onClick={() => setIsOpen(false)}
                             >
@@ -129,16 +123,7 @@ export default function Header() {
                             </a>
                         ))}
                     </div>
-
-                    <div className="flex cursor-pointer items-center justify-center rounded-[14px] border-2 border-[#000000] bg-bg-primary px-[20px] py-[5px] transition-all hover:scale-105 md:hidden">
-                        <a
-                            className="cursor-pointer text-[24px] font-bold text-white"
-                            href="#presale"
-                            onClick={() => setIsOpen(false)}
-                        >
-                            PRE-SALE
-                        </a>
-                    </div>
+                    <ButtonCustom onClick={() => setIsOpen(false)}>PRE-SALE</ButtonCustom>
                 </div>
             </div>
         </>

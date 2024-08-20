@@ -3,6 +3,7 @@ import Container from './common/Container';
 import TextHeader from './common/TextHeader';
 import CountdownTimer from './CountdownTimer';
 import Paragraph from './common/Paragraph';
+import ButtonCustom from './common/ButtonCustom';
 
 export default function PreSale() {
     const dateTimeAfter30_8 = new Date('2024-08-30T00:00:00').getTime();
@@ -35,11 +36,7 @@ export default function PreSale() {
                     <CountdownTimer targetDate={dateTimeAfter30_8} />
                     <Paragraph classes={'font-[700]'}>Min:</Paragraph>
                     <Paragraph classes={'font-[700]'}>Max:</Paragraph>
-                    <div className="flex w-[300px] cursor-pointer items-center justify-center rounded-[14px] border-2 border-[#000000] bg-white px-[20px] py-[10px] transition-all hover:scale-105">
-                        <a className="cursor-pointer text-[22px] font-bold text-black">
-                            Buy Now
-                        </a>
-                    </div>
+                    <ButtonCustom>Buy Now</ButtonCustom>
                 </div>
             </div>
             <div className="absolute bottom-0 right-0" data-aos="fade-down-right">

@@ -23,7 +23,7 @@ export default function Home() {
     return (
         <div>
             <div className="flex aspect-video w-full max-w-full bg-banner bg-100% bg-center bg-no-repeat pr-[16px] md:h-full">
-                <div className="flex items-end">
+                <div className="flex items-end w-full">
                     <div className="flex w-full min-w-[200px] max-w-[700px]">
                         <img
                             src="/assets/dino_ip.png"

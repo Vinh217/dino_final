@@ -27,7 +27,7 @@ export default function Dinonomic() {
                     >
                         999,999,999,999 DINO
                     </Paragraph>
-                    <div className='bg-[red] border border-white rounded-tr-[50px] rounded-bl-[50px] flex item-center flex-col justify-center py-[16px] px-[30px]'>
+                    <div className='bg-[red] border border-white rounded-tr-[50px] rounded-bl-[50px] flex item-center flex-col justify-center py-[16px] px-[50px]'>
                         <Paragraph
                             classes={'font-[700] break-keep whitespace-nowrap'}
                         >

@@ -1,3 +1,4 @@
+import ButtonCustom from './common/ButtonCustom';
 import Container from './common/Container';
 import Paragraph from './common/Paragraph';
 import TextHeader from './common/TextHeader';
@@ -39,14 +40,7 @@ export default function About() {
                         And somewhere in this new realm, something ancient is
                         beginning to stir
                     </Paragraph>
-                    <div
-                        className="flex w-[300px] cursor-pointer items-center justify-center rounded-[14px] border-2 border-[#000000] bg-white px-[20px] py-[10px] transition-all hover:scale-105"
-                        data-aos="fade-up"
-                    >
-                        <a className="cursor-pointer text-[22px] font-bold text-black">
-                            Join Our Community
-                        </a>
-                    </div>
+                    <ButtonCustom>Join Our Community</ButtonCustom>
                 </div>
             </div>
         </Container>
