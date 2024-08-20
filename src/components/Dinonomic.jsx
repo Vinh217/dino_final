@@ -14,20 +14,20 @@ export default function Dinonomic() {
             </div>
             <div className="flex flex-col items-center justify-between gap-[20px] md:flex-row">
                 <div
-                    className="flex w-[50%] flex-col justify-start gap-[30px]"
+                    className="flex w-[50%] flex-col justify-center items-center gap-[30px]"
                     data-aos="fade-up"
                 >
-                    <Paragraph
-                        classes={'font-[700] break-keep whitespace-nowrap'}
+                    <TextHeader
+                        classes={' !text-[3.6rem] md:!text-[4.8rem] break-keep whitespace-nowrap'}
                     >
                         Total Supply:
-                    </Paragraph>
+                    </TextHeader>
                     <Paragraph
                         classes={'font-[700] break-keep whitespace-nowrap'}
                     >
                         999,999,999,999 DINO
                     </Paragraph>
-                    <div>
+                    <div className='bg-[red] border border-white rounded-tr-[50px] rounded-bl-[50px] flex item-center flex-col justify-center py-[16px] px-[30px]'>
                         <Paragraph
                             classes={'font-[700] break-keep whitespace-nowrap'}
                         >
