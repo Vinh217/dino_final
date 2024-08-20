@@ -12,7 +12,7 @@ export default function Header() {
         {
             id: 1,
             title: 'Home',
-            link: '',
+            link: '#',
         },
         {
             id: 2,
@@ -39,7 +39,6 @@ export default function Header() {
                         <div className="flex items-center md:gap-[50px]">
                             <div
                                 className="flex w-full max-w-[50px] cursor-pointer md:max-w-[70px]"
-                                onClick={() => window.location.reload()}
                             >
                                 <img
                                     src="/assets/dino_logo.png"

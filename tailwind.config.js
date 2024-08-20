@@ -11,6 +11,7 @@ export default {
         'bgdino3': 'url("/assets/bgdino3.png")',
         'banner': 'url("/assets/banner.png")',
         'footer': 'url("/assets/footer.png")',
+        'dua': 'url("/assets/dua.png")',
       },
       backgroundSize: {
         '100%': '100% 100%'
