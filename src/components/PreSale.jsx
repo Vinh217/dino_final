@@ -1,7 +1,6 @@
 import Container from './common/Container';
 // import Paragraph from './common/Paragraph';
 import TextHeader from './common/TextHeader';
-import LazyLoad from 'react-lazyload';
 import CountdownTimer from './CountdownTimer';
 import Paragraph from './common/Paragraph';
 
@@ -10,17 +9,21 @@ export default function PreSale() {
 
     return (
         <Container>
-            <div className="flex h-full w-full flex-col justify-center md:flex-row pb-[300px] md:pb-[30px]">
-                <div className="flex w-full min-w-[200px]" data-aos="zoom-in-up">
-                    <LazyLoad height={200} once>
-                        <img
-                            src="/assets/dino_song.png"
-                            alt="egg"
-                            className="w-full shrink-0 object-cover"
-                        />
-                    </LazyLoad>
+            <div className="flex h-full w-full flex-col justify-center pb-[300px] md:flex-row md:pb-[30px]">
+                <div
+                    className="flex w-full min-w-[200px]"
+                    data-aos="zoom-in-up"
+                >
+                    <img
+                        src="/assets/dino_song.png"
+                        alt="egg"
+                        className="w-full shrink-0 object-cover"
+                    />
                 </div>
-                <div className="flex w-full flex-col items-center gap-[30px]" data-aos="zoom-in-down">
+                <div
+                    className="flex w-full flex-col items-center gap-[30px]"
+                    data-aos="zoom-in-down"
+                >
                     <TextHeader
                         classes={'font-potta-one text-center py-[30px]'}
                     >
@@ -39,18 +42,15 @@ export default function PreSale() {
                     </div>
                 </div>
             </div>
-            <div className='absolute bottom-0 right-0' data-aos="zoom-in-up">
-            <div className="flex w-full min-w-[200px]">
-                <LazyLoad height={200} once>
+            <div className="absolute bottom-0 right-0" data-aos="zoom-in-up">
+                <div className="flex w-full min-w-[200px]">
                     <img
                         src="/assets/twoegg.png"
                         alt="egg"
                         className="w-full shrink-0 object-cover"
                     />
-                </LazyLoad>
+                </div>
             </div>
-            </div>
-          
         </Container>
     );
 }

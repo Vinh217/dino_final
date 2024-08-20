@@ -1,4 +1,3 @@
-import LazyLoad from 'react-lazyload';
 import About from '../../components/About';
 import Dinonomic from '../../components/Dinonomic';
 import Presale from '../../components/PreSale';
@@ -19,23 +18,26 @@ export default function Home() {
             offset: 0,
         });
     }, []);
-    
+
     return (
         <div>
-            <div className="flex aspect-video w-full max-w-full bg-banner bg-100% bg-center bg-no-repeat pr-[16px] md:h-full" 
-            data-aos="zoom-out"
+            <div
+                className="flex aspect-video w-full max-w-full bg-banner bg-100% bg-center bg-no-repeat pr-[16px] md:h-full"
             >
                 <div className="flex items-end">
-                    <div className="flex w-full min-w-[200px] max-w-[700px]" data-aos="fade-right" data-aos-offset="0">
-                        <LazyLoad height={200} once>
-                            <img
-                                src="/assets/dino_ip.png"
-                                alt="gift"
-                                className="w-full shrink-0 object-cover"
-                            />
-                        </LazyLoad>
+                    <div
+                        className="flex w-full min-w-[200px] max-w-[700px]"
+                    >
+                        <img
+                            src="/assets/dino_ip.png"
+                            alt="gift"
+                            className="w-full shrink-0 object-cover"
+                        />
                     </div>
-                    <div className="flex h-full flex-col justify-center text-center" data-aos="fade-up" data-aos-offset="0">
+                    <div
+                        className="flex h-full flex-col justify-center text-center"
+                        data-aos="fade-up"
+                    >
                         <TextHeader classes={'uppercase !font-urban'}>
                             Welcome to Dino
                         </TextHeader>

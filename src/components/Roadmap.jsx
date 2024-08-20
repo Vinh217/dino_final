@@ -1,18 +1,22 @@
 import Container from './common/Container';
 import Paragraph from './common/Paragraph';
 import TextHeader from './common/TextHeader';
-import LazyLoad from 'react-lazyload';
 
 export default function Roadmap() {
     return (
         <Container>
-            <div className="text-center"  data-aos="flip-left" id="roadmap">
+            <div className="text-center" data-aos="flip-left" id="roadmap">
                 <TextHeader>DINO ROADMAP</TextHeader>
             </div>
             <div className="flex flex-col items-center justify-between gap-[20px] md:flex-row">
                 <div className="flex flex-col gap-[30px] md:flex-row">
-                    <div className="flex flex-col justify-start" data-aos="fade-up">
-                        <Paragraph classes={'font-[700] break-keep whitespace-nowrap'}>
+                    <div
+                        className="flex flex-col justify-start"
+                        data-aos="fade-up"
+                    >
+                        <Paragraph
+                            classes={'font-[700] break-keep whitespace-nowrap'}
+                        >
                             1 The Triassic
                         </Paragraph>
                         <div>
@@ -34,8 +38,14 @@ export default function Roadmap() {
                         </div>
                     </div>
 
-                    <div className="flex flex-col justify-start md:mt-[100px]" data-aos="fade-up" data-aos-delay="300">
-                        <Paragraph classes={'font-[700] break-keep whitespace-nowrap'}>
+                    <div
+                        className="flex flex-col justify-start md:mt-[100px]"
+                        data-aos="fade-up"
+                        data-aos-delay="300"
+                    >
+                        <Paragraph
+                            classes={'font-[700] break-keep whitespace-nowrap'}
+                        >
                             2 The Jurrasic
                         </Paragraph>
                         <div>
@@ -56,9 +66,15 @@ export default function Roadmap() {
                             </Paragraph>
                         </div>
                     </div>
-                    
-                    <div className="flex flex-col justify-start md:mt-[200px]" data-aos="fade-up" data-aos-delay="500">
-                        <Paragraph classes={'font-[700] break-keep whitespace-nowrap'}>
+
+                    <div
+                        className="flex flex-col justify-start md:mt-[200px]"
+                        data-aos="fade-up"
+                        data-aos-delay="500"
+                    >
+                        <Paragraph
+                            classes={'font-[700] break-keep whitespace-nowrap'}
+                        >
                             3 The Cretaceous
                         </Paragraph>
                         <div>
@@ -77,14 +93,15 @@ export default function Roadmap() {
                         </div>
                     </div>
                 </div>
-                <div className="flex w-full min-w-[200px]" data-aos="fade-right">
-                    <LazyLoad height={200} once>
-                        <img
-                            src="/assets/dino_surface.png"
-                            alt="egg"
-                            className="w-full shrink-0 object-cover"
-                        />
-                    </LazyLoad>
+                <div
+                    className="flex w-full min-w-[200px]"
+                    data-aos="fade-right"
+                >
+                    <img
+                        src="/assets/dino_surface.png"
+                        alt="egg"
+                        className="w-full shrink-0 object-cover"
+                    />
                 </div>
             </div>
         </Container>

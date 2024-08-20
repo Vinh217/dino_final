@@ -1,7 +1,6 @@
 import Container from './common/Container';
 import Paragraph from './common/Paragraph';
 import TextHeader from './common/TextHeader';
-import LazyLoad from 'react-lazyload';
 
 export default function About() {
     return (
@@ -16,13 +15,11 @@ export default function About() {
             </div>
             <div className="flex flex-col items-center justify-center gap-[20px] md:flex-row">
                 <div className="flex w-full min-w-[200px]" data-aos="fade-up">
-                    <LazyLoad height={200} once>
-                        <img
-                            src="/assets/egg.png"
-                            alt="egg"
-                            className="w-full shrink-0 object-cover"
-                        />
-                    </LazyLoad>
+                    <img
+                        src="/assets/egg.png"
+                        alt="egg"
+                        className="w-full shrink-0 object-cover"
+                    />
                 </div>
                 <div
                     className="flex flex-col items-center gap-[20px] text-center"

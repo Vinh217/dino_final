@@ -1,18 +1,22 @@
 import Container from './common/Container';
 import Paragraph from './common/Paragraph';
 import TextHeader from './common/TextHeader';
-import LazyLoad from 'react-lazyload';
 
 export default function Dinonomic() {
     return (
         <Container>
-            <div className="text-center" data-aos="zoom-in-right" id="dinonomic">
+            <div
+                className="text-center"
+                data-aos="zoom-in-right"
+                id="dinonomic"
+            >
                 <TextHeader>DINONOMICS</TextHeader>
             </div>
-            <div
-                className="flex flex-col items-center justify-between gap-[20px] md:flex-row"
-            >
-                <div className="flex w-[50%] flex-col justify-start gap-[30px]" data-aos="fade-up">
+            <div className="flex flex-col items-center justify-between gap-[20px] md:flex-row">
+                <div
+                    className="flex w-[50%] flex-col justify-start gap-[30px]"
+                    data-aos="fade-up"
+                >
                     <Paragraph
                         classes={'font-[700] break-keep whitespace-nowrap'}
                     >
@@ -51,14 +55,15 @@ export default function Dinonomic() {
                         </Paragraph>
                     </div>
                 </div>
-                <div className="flex w-full min-w-[200px]" data-aos="zoom-out-left">
-                    <LazyLoad height={200} once>
-                        <img
-                            src="/assets/dino_rest.png"
-                            alt="egg"
-                            className="w-full shrink-0 object-cover"
-                        />
-                    </LazyLoad>
+                <div
+                    className="flex w-full min-w-[200px]"
+                    data-aos="zoom-out-left"
+                >
+                    <img
+                        src="/assets/dino_rest.png"
+                        alt="egg"
+                        className="w-full shrink-0 object-cover"
+                    />
                 </div>
             </div>
         </Container>

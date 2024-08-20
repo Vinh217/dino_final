@@ -8,12 +8,12 @@ export default function Footer() {
             id="footer"
         >
             <div className="flex gap-[50px]" 
-            data-aos="zoom-out-left"
+            data-aos="fade-in"
             >
                 <PiTelegramLogoDuotone className="h-[70px] w-[70px] cursor-pointer text-white" />
                 <BsTwitterX className="h-[70px] w-[70px] cursor-pointer text-white" />
             </div>
-            <Paragraph classes={'font-[700] mt-[20px]'}>
+            <Paragraph classes={'font-[700] mt-[20px] text-center'}>
                 Unleash the Dino-Mite! Stay Connected and Join the Adventure!
             </Paragraph>
         </div>
