@@ -9,7 +9,7 @@ export default {
       backgroundImage: {
         'plant-dino': 'url("/assets/plant_full.png")',
         'bgdino3': 'url("/assets/bgdino3.png")',
-        'banner': 'url("/assets/banner_1.png")',
+        'banner': 'url("/assets/banner.png")',
         'footer': 'url("/assets/footer.png")',
       },
       backgroundSize: {
