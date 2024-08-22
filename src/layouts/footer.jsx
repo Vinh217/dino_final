@@ -29,6 +29,9 @@ export default function Footer() {
             <Paragraph classes={'font-[700] mt-[20px] text-center'}>
                 Unleash the Dino-Mite! Stay Connected and Join the Adventure!
             </Paragraph>
+            <Paragraph classes={'font-[700] mt-[20px] text-center'}>
+                Contact: <a href="mailto:hello@dino.win" className='underline font-[700] text-[1.4rem] md:text-[2.8rem] font-poppins not-italic'>hello@dino.win</a>
+            </Paragraph>
         </div>
         </>
         

@@ -10,7 +10,7 @@ export default function PreSale() {
 
     return (
         <Container>
-            <div className="flex h-full w-full flex-col justify-center pb-[300px] md:flex-row md:pb-[30px]">
+            <div className="flex h-full w-full flex-col justify-center pb-[200px] md:flex-row md:pb-[30px]">
                 <div
                     className="flex w-full min-w-[200px]"
                     data-aos="flip-right"
