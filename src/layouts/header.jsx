@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import ButtonCustom from '../components/common/ButtonCustom';
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
@@ -59,7 +58,11 @@ export default function Header() {
                                 ))}
                             </div>
                         </div>
-                        <ButtonCustom>PRE-SALE</ButtonCustom>
+                        <div className="relative" data-aos="fade-up">
+                            <a href="#presale" className="btn btn-white btn-animate font-wild text-[2rem] font-[700] border-2 border-black">
+                                PRE-SALE
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -122,7 +125,11 @@ export default function Header() {
                             </a>
                         ))}
                     </div>
-                    <ButtonCustom onClick={() => setIsOpen(false)}>PRE-SALE</ButtonCustom>
+                    <div className="relative" data-aos="fade-up">
+                        <a href="#presale" className="btn btn-white btn-animate font-wild text-[2rem] font-[700] border-2 border-black" onClick={() => setIsOpen(false)}>
+                            PRE-SALE
+                        </a>
+                    </div>
                 </div>
             </div>
         </>

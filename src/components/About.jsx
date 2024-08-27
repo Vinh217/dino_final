@@ -1,4 +1,3 @@
-import ButtonCustom from './common/ButtonCustom';
 import Container from './common/Container';
 import Paragraph from './common/Paragraph';
 import TextHeader from './common/TextHeader';
@@ -40,7 +39,11 @@ export default function About() {
                         And somewhere in this new realm, something ancient is
                         beginning to stir
                     </Paragraph>
-                    <ButtonCustom>Join Our Community</ButtonCustom>
+                    <div className="relative" data-aos="fade-up">
+                        <a href="#footer" className="btn btn-white btn-animate font-wild text-[2rem] font-[700] border-2 border-black">
+                        Join Our Community
+                        </a>
+                    </div>
                 </div>
             </div>
         </Container>
