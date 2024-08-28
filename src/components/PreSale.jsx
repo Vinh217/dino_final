@@ -34,8 +34,8 @@ export default function PreSale() {
                         Get some $SOL and ready to join DINO Party
                     </Paragraph>
                     <CountdownTimer targetDate={dateTimeAfter30_8} />
-                    <Paragraph classes={'font-[700]'}>Min:</Paragraph>
-                    <Paragraph classes={'font-[700]'}>Max:</Paragraph>
+                    <Paragraph classes={'font-[700]'}>Min: 0.1 $SOL</Paragraph>
+                    <Paragraph classes={'font-[700]'}>Max: 200 $SOL</Paragraph>
                     <ButtonCustom>Buy Now</ButtonCustom>
                 </div>
             </div>
