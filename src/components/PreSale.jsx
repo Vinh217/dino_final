@@ -9,9 +9,9 @@ import 'reactjs-popup/dist/index.css';
 import Content from './common/Content';
 export default function PreSale() {
     // const dateTimeAfter30_8 = new Date('2024-08-31T22:00:00').getTime();
-    const date = new Date(2024, 7, 31); 
-    date.setHours(22, 0, 0, 0);
-    const dateTimeAfter30_8 = date.getTime();
+    // const date = new Date(2024, 7, 31); 
+    // date.setHours(22, 0, 0, 0);
+    const dateTimeAfter30_8 = new Date('2024-08-31T22:00:00+07:00').getTime();
 
     return (
         <Container>

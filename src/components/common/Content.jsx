@@ -3,7 +3,7 @@ import Paragraph from './Paragraph';
 
 // eslint-disable-next-line react/prop-types
 export default function Content({ close }) {
-    const [textToCopy] = useState('Test Wallet');
+    const [textToCopy] = useState('Coming Soon');
     const [copySuccess, setCopySuccess] = useState(false);
 
     const handleCopy = () => {
