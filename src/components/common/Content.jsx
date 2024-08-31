@@ -3,7 +3,7 @@ import Paragraph from './Paragraph';
 
 // eslint-disable-next-line react/prop-types
 export default function Content({ close }) {
-    const [textToCopy] = useState('Presale Wallet');
+    const [textToCopy] = useState('2cB22PnMtWPoqNKf8rDGwuarRijgtQjEbiiaio2fQzuU');
     const [copySuccess, setCopySuccess] = useState(false);
 
     const handleCopy = () => {
@@ -28,7 +28,7 @@ export default function Content({ close }) {
             <div className="flex flex-col items-center pt-[40px]">
                 <Paragraph classes={'text-white font-[700]'}>Send  <span className='font-[900] text-[1.4rem] md:text-[2.8rem] '>Min 0.1 $SOL Max 200 $SOL </span>to Presale Wallet</Paragraph>
                 <div className="flex gap-[20px] items-center pb-[20px]">
-                    <Paragraph classes={'text-white font-[900]'}>{textToCopy}</Paragraph>
+                    <Paragraph classes={'text-white md:!text-[2.4rem] !text-[1.05rem] font-[900]'}>{textToCopy}</Paragraph>
                     <button
                         onClick={handleCopy}
                         className="rounded-[10px] bg-white border border-[#000000] px-[20px] py-[10px] font-wild text-[1.4rem] font-[700] not-italic md:text-[2.8rem]"
