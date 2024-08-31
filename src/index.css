@@ -184,7 +184,8 @@ img {
 }
 
 .menu.open {
-  right: 0; /* Slide in */
+  right: 0;
+  /* Slide in */
 }
 
 .btn:link,
@@ -242,16 +243,21 @@ img {
 .popup-content {
   border-radius: 10px;
   width: 400px;
+  box-shadow: 10px 11px 36px 0px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 10px 11px 36px 0px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 10px 11px 36px 0px rgba(0, 0, 0, 0.4);
+  padding: 16px;
+  background-image: url("/assets/banner.png");
 }
 
 @keyframes moveInBottom {
   0% {
-      opacity: 0;
-      transform: translateY(30px);
+    opacity: 0;
+    transform: translateY(30px);
   }
 
   100% {
-      opacity: 1;
-      transform: translateY(0px);
+    opacity: 1;
+    transform: translateY(0px);
   }
 }
