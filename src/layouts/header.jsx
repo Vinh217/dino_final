@@ -28,6 +28,12 @@ export default function Header() {
             title: 'Dinonomic',
             link: '#dinonomic',
         },
+        {
+            id: 5,
+            title: 'FAQ',
+            link: 'https://dino-5.gitbook.io/dino_memecoin',
+            target: '_blank',
+        },
     ];
     return (
         <>
@@ -52,6 +58,7 @@ export default function Header() {
                                         href={m.link}
                                         className="cursor-pointer font-wild text-[3.6rem]"
                                         key={m.id}
+                                        target={m?.target}
                                     >
                                         {m.title}
                                     </a>
@@ -119,6 +126,7 @@ export default function Header() {
                                 href={m.link}
                                 className="cursor-pointer font-wild text-[3.6rem]"
                                 key={m.id}
+                                target={m?.target}
                                 onClick={() => setIsOpen(false)}
                             >
                                 {m.title}
