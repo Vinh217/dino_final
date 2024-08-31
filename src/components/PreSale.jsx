@@ -6,7 +6,10 @@ import Paragraph from './common/Paragraph';
 import ButtonCustom from './common/ButtonCustom';
 
 export default function PreSale() {
-    const dateTimeAfter30_8 = new Date('2024-08-31T22:00:00').getTime();
+    // const dateTimeAfter30_8 = new Date('2024-08-31T22:00:00').getTime();
+    const date = new Date(2024, 7, 31); 
+    date.setHours(22, 0, 0, 0);
+    const dateTimeAfter30_8 = date.getTime();
 
     return (
         <Container>
