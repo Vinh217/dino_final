@@ -239,6 +239,11 @@ img {
   animation-fill-mode: backwards;
 }
 
+.popup-content {
+  border-radius: 10px;
+  width: 400px;
+}
+
 @keyframes moveInBottom {
   0% {
       opacity: 0;

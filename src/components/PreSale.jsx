@@ -4,7 +4,9 @@ import TextHeader from './common/TextHeader';
 import CountdownTimer from './CountdownTimer';
 import Paragraph from './common/Paragraph';
 import ButtonCustom from './common/ButtonCustom';
-
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
+import Content from './common/Content';
 export default function PreSale() {
     // const dateTimeAfter30_8 = new Date('2024-08-31T22:00:00').getTime();
     const date = new Date(2024, 7, 31); 
@@ -39,7 +41,9 @@ export default function PreSale() {
                     <CountdownTimer targetDate={dateTimeAfter30_8} />
                     <Paragraph classes={'font-[700]'}>Min: 0.1 $SOL</Paragraph>
                     <Paragraph classes={'font-[700]'}>Max: 200 $SOL</Paragraph>
-                    <ButtonCustom>Buy Now</ButtonCustom>
+                    <Popup modal trigger={<ButtonCustom>Buy Now</ButtonCustom>}>
+                        {close => <Content close={close} />}
+                    </Popup>
                 </div>
             </div>
             <div className="absolute bottom-0 right-0" data-aos="fade-down-right">
